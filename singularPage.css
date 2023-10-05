@@ -1,0 +1,157 @@
+:root {
+    color: white;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    background-color: #212034;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #131227;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-container, .icon-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-container {
+    padding-right: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+#logo {
+    height: 50px;
+}
+
+#searchBar {
+    width: 600px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: #212034;
+    color: white;
+}
+
+.postContainer {
+    display: flex;            
+    flex-direction: column;   
+    align-items: center;      
+    justify-content: center; 
+}
+
+#postOuterBox {
+    margin: 5%;
+    background-color: #131227;
+    width: 900px;
+    height: 900px;
+    border-radius: 10px;
+    font-family: Helvetica;
+
+    display: flex;            
+    flex-direction: column;   
+    align-items: center;    
+}
+
+#postBox {
+    width: 840px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #2a2941;
+
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 30px;
+
+    display: flex;            
+    flex-direction: column;  
+}
+
+#userBorder {
+    width: 780px;
+    height: auto;
+    border: solid #212034 3px;
+    
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+
+    overflow: auto;
+
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#userInfo {
+display: flex; 
+padding-bottom: 20px;
+font-size:110%;
+gap: 15px;
+}
+
+#userPost {
+    font-size:100%;
+}
+
+#postIcons {
+    font-size:100%;
+    margin-top: auto; 
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+    
+
+#commentBox {
+    width: 840px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: #2a2941;
+}
+
+#comments {
+    width: 780px;
+    height: 200px;
+    background-color: #2a2941;
+    border: solid #131227 3px;
+    border-bottom: solid #131227 40px;
+    border-radius: 10px;
+    margin: 30;
+    padding: 10px;
+    color:white;
+}
+
+#commentIcons {
+display: flex; 
+
+padding: 20px;
+
+font-size:110%;
+gap: 15px;
+}
+
+#commentButton {
+    border-radius: 15%;
+    background-color: #2a2941;;
+    color: white;
+}
