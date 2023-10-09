@@ -134,7 +134,7 @@ body {
 }
 
 #active-page {
-    background-color: hsla(305, 0%, 100%, 0.2);
+    background-color: #393851;
     border-radius: 3px;
     padding: 2px;
 }
@@ -170,7 +170,8 @@ body {
 }
 
 .stat-box {
-    background-color: #131227;
+    background-color: #393851;
+    border: 1px solid #565481;
     color: #FAFAFC;
     text-align: center;
     padding: 8px;
@@ -181,7 +182,6 @@ body {
 
 #stats p:first-child {
     font-size: 10px;
-    font-weight: bold;
 }
 
 #stats p:nth-child(2) {
@@ -232,7 +232,8 @@ body {
 .post {
     width: 600px;
     border-radius: 8px;
-    background-color: #131227;
+    background-color: #393851;
+    border: 1px solid #565481;
 
     flex-direction: row;
     align-items: flex-start;
@@ -241,7 +242,7 @@ body {
 .avatar-area {
     flex-direction: row;
     display: flex;
-    align-items: flex-start;
+
 }
 
 .avatar-area img {
@@ -251,14 +252,29 @@ body {
     margin: 10px;
 }
 
-.avatar-area h4 {
+.text-ava {
     flex: 1;
-    margin-top: 20px;
-    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-ava h4 {
+    flex: 1;
+    margin-top: 14px;
+    font-size: 14px;
+}
+
+.text-ava h5 {
+    flex: 1;
+    font-size: 10px;
+    font-weight: lighter;
+    color: #68669D;
+    margin-bottom: 8px;
 }
 
 .post p {
     margin-left: 10px;
+    margin-right: 10px;
     font-size: 12px;
     line-height: 1.6;
 }
@@ -270,5 +286,5 @@ body {
 }
 
 .activity-button-text {
-    margin-right: 30px;
+    padding-right: 24px;
 }
