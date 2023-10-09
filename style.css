@@ -1,0 +1,307 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    padding-top: 60px;
+}
+
+.topbar {
+    background-color: #131227;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    justify-content: space-between;
+    top: 0; /* Ensures topbar sticks to the top */
+    z-index: 1000; /* Ensures topbar is above other elements */
+}
+
+#navigation {
+    float: right;
+    width: 232px;
+    text-align: right;
+  }
+  
+  /* Style the navigation menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-right: 20px;
+  }
+  
+  /* Styling each individual list element */
+  nav li {
+    display: inline;
+    margin-left: 30px;
+  }
+  
+  li:hover i {
+    color: #ffffff; /* Change icon color on hover */
+  }
+  
+  /* Styling the links inside the list elements */
+  nav a {
+    text-decoration: none;
+    color: #aaa6e5;
+    font-weight: bold;
+  }
+  
+  #logo {
+    float: left;
+    padding-right: 60px;
+    padding-left: 12px;
+  }
+  
+  #logoimg {
+    width: 160px;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+
+  .user-settings {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute; /* Using absolute positioning */
+    top: 80px; /* Move it down slightly more than topbar height to avoid overlap */
+    left: 210px; /* Position just to the right of the vertical line */
+}
+
+
+.user-info {
+    display: flex;
+    align-items: flex-start; /* align items to start */
+    margin-bottom: 20px;
+}
+
+.user-info i {
+    font-size: 50px;
+    margin-right: 15px;
+}
+
+.label, 
+.alias {
+    margin: 0;
+    display: block; /* ensure block display */
+}
+
+.label {
+    color: grey;
+    margin-bottom: 5px; /* add some space between label and alias */
+}
+
+.alias {
+    font-weight: bold;
+}
+
+
+.account-information {
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.account-information h2 {
+    margin-top: 0;
+}
+
+.sub-category p {
+    margin: 5px 0;
+}
+
+/* Vertical line */
+body::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: #ccc;
+    left: 200px; 
+}
+
+.account-information,
+.two-factor-authentication {
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 20px; /* Added spacing between the two boxes */
+}
+
+.account-information h2, 
+.two-factor-authentication h3 {
+    margin-top: 0;
+}
+
+.sub-category p {
+    margin: 5px 0;
+}
+/* New Sidebar Navigation CSS */
+.sidebar-nav {
+    position: absolute;
+    top: 60px; /* under the header */
+    left: 0; /* at the left edge of the viewport */
+    width: 200px; /* adjust as needed */
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box; /* padding is included in width */
+    background-color: #f8f8f8; /* or any color you prefer */
+}
+
+.sidebar-nav h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px; 
+    padding-top: 10px; 
+    border-top: 1px solid #ccc; /* added a top border for separation */
+}
+
+/* Adjust the first h2 to remove the top border */
+.sidebar-nav h2:first-of-type {
+    border-top: none;
+    padding-top: 0;
+}
+
+.sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    margin-bottom: 15px;
+}
+.sidebar-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sidebar-nav a:hover {
+    text-decoration: underline;
+}
+.show {
+    color: #aaa; /* Lighter/invisible color for 'Show' text */
+    margin-left: 10px;
+}
+
+
+/* Add styling for the User ID section */
+.account-information .info-item:first-child {
+    border-top: 1px solid #ccc; /* Add a top border for separation */
+    padding-top: 10px; /* Add some spacing at the top */
+}
+
+.account-information .info-item:first-child p strong {
+    color: grey; /* Set the color of "User ID" to grey */
+    text-decoration: underline; /* Underline the text */
+    font-weight: normal; /* Reset font weight to normal */
+}
+
+.account-information .info-item:first-child .show {
+    color: #aaa; /* Lighter/invisible color for 'Show' text */
+    margin-left: 10px;
+}
+
+/* Adjust button styles to align them properly */
+.account-information .info-item .show {
+    display: inline-block; /* Display "Show" as an inline-block element */
+}
+
+.account-information .info-item button {
+    margin-left: 10px; /* Add margin to separate buttons */
+}
+
+/* Style for the lock symbol */
+/* Style for the lock symbol */
+.lock-symbol {
+    font-size: 24px; /* Adjust the size as needed */
+    color: #ccc; /* Gray color for the lock symbol */
+    margin-right: 10px; /* Add some spacing between the symbol and text */
+    display: inline-block; /* Make the lock and text inline-block elements */
+    vertical-align: middle; /* Vertically align the lock and text */
+}
+
+/* Style for the two-factor status text */
+.two-factor-status {
+    color: #ccc; /* Gray color for the status text */
+    font-size: 14px; /* Adjust the size as needed */
+    margin: 0; /* Remove default margin */
+    display: inline-block; /* Make the text an inline-block element */
+    vertical-align: middle; /* Vertically align the text with the lock */
+}
+
+/* Additional style for the two-factor content */
+.two-factor-content {
+    display: inline-block; /* Make the content inline-block */
+    vertical-align: middle; /* Vertically align the content with the lock */
+}
+
+/* Adjust the position of the two-factor buttons */
+.two-factor-buttons {
+    text-align: center; /* Center-align the buttons */
+    margin-top: 20px; /* Add some spacing from the content */
+}
+
+/* Adjust the styles for the buttons */
+.two-factor-buttons button {
+    margin: 0 10px; /* Add margin between the buttons */
+    padding: 10px 20px; /* Add padding to the buttons for better visibility */
+    font-weight: bold;
+    background-color: #ccc; /* Background color for buttons */
+    border: none;
+    color: #333; /* Text color for buttons */
+    cursor: pointer;
+}
+
+.two-factor-buttons button:hover {
+    background-color: #aaa; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+.settings-container {
+    display: flex;
+    border-left: 2px solid #000; /* Add a vertical line to the left of the settings */
+}
+
+.settings-sidebar {
+    margin-left: 10px; /* Add some space between the vertical line and the text */
+}
+
+.sidebar-nav h2,
+.sidebar-nav ul {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.sidebar-nav ul {
+    list-style-type: none; /* Remove bullet points from the list */
+}
+
+.sidebar-nav a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #000; /* Set link color */
+}
+
+/* Additional styling to enhance the appearance */
+.sidebar-nav a:hover {
+    text-decoration: underline; /* Add underline to links on hover */
+}
+
+.sidebar-nav li {
+    margin-bottom: 10px; /* Add some space between list items */
+}
+
+
+/* Add space between subcategory titles and their content */
+.settings-sidebar h3 {
+    margin-bottom: 15px; /* Add margin below the subcategory titles */
+}
