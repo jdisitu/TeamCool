@@ -7,51 +7,84 @@
     <title>Front page</title>
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <img src="/images/logo3.png" id="logo">
-            <div class="search-container">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="search" id="searchBar" placeholder="Search...">
-            </div>
-            <div class="icon-container">
-                <i class="fa-regular fa-bell"></i>
-                <i class="fa-regular fa-user"></i>
-            </div>
+    <header class="topbar">
+        <div id="logo"><img src="/images/logo3.png" id="logoimg" /></div>
+        <div id="searchBar">
+          <form action="/search" method="get">
+            <input type="search" id="search" name="q" placeholder="Search..." />
+          </form>
         </div>
-    </nav>
+        <div id="navigation">
+          <nav>
+            <ul>
+              <li>
+                <a href="#"><i class="fa-solid fa-list"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-bell"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-user"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
 
 <div class="postContainer">
-    <div id="postOuterBox">
+    <div id="postOuterBorder">
         <div id="postBox">
             <div id="userInfo">
-                 <i class="fa-regular fa-user"></i>
-                 <p>Tigerlilly<p>
-         </div>
+                <i class="fa-regular fa-user" id="userIcon"></i>
+                <div id="userDetails"> 
+                    <p id="title">I can’t believe I got away with this</p>
+                    <p id="postedBy">Posted by WhisperWizard 1 hour ago</p>
+                </div>
+            </div>
+                       
          <div id="userPost">
-            <div id="userBorder">
-        <p>I was the very last parent to pick up my son from kindergarden that day. We have struggled financially for a few years since the hospital bills for my mom have been pretty rough. I don’t know how a kindergarden got hold of such an expensive piece of decoration, but on the wall in the main dining room hang an Arne Jacobsen clock worth around 200 dollars. To be honest I don’t know why I did it, because a clock will not make a huge difference in our lives, but as we were about to leave, I quickly climbed up on a table of took the clock under my jacket and left. I told my wife that I found it cheap on a yardsale, and wanted it to decorate our tiny home - she was extremely happy for it. The next time I picked up my son, they had replaced the clock with a cheap one from IKEA, but I never heard anyone speak of it.</p>
-    </div>    
+             <p>Once upon a time in a lush, green garden, there lived a snail named Sammy. 
+                Sammy was not like the other snails in the garden; he was an adventurous and curious snail. 
+                While his fellow snails were content munching on leaves and basking in the warm sun, Sammy dreamt of exploring the world beyond the garden.
+                 One sunny morning, after a night of gentle rain, Sammy decided it was time to begin his great adventure.
+                With his tiny, spiral-shaped house on his back, he slowly made his way towards the garden's edge, leaving behind a silvery trail in the dewy grass. Sammy's journey was full of challenges.
+                He encountered towering blades of grass that seemed like impenetrable forests, but he persevered, inching his way past them. 
+                He climbed over pebbles and even faced a puddle that seemed like an endless sea to him. But Sammy was determined, and he would not be deterred.</p>   
     </div>
-        <div id="postIcons">
-            <i class="fa-solid fa-mug-hot"></i>
-            <i class="fa-regular fa-comment"></i>
-            <i class="fa-regular fa-bell"></i>
-        </div>
-    </div>
-   
-    <div id="commentBox">
-        <input type="text" id="comments" placeholder="Write your comment here...">
-        <div id="commentIcons">
-        <i class="fa-solid fa-rainbow"></i>
-        <i class="fa-regular fa-image"></i>
-        <button id="commentButton"><p>Comment</p></button>
-        </div>
-    </div>
-</div>
-</div>
-   
 
+    <div id="postIcons">
+        <div id="userBorder"></div>
+        <div class="icon-text-pair1">
+            <i class="fa-solid fa-mug-hot"></i>
+            <p>Sip</p>
+        </div>
+        <div class="icon-text-pair2">
+            <i class="fa-regular fa-comment"></i>
+            <p>37 comments</p>
+        </div>
+        <div class="icon-text-pair3">
+            <i class="fa-regular fa-bell"></i>
+            <p>Follow</p>
+        </div>
+    </div>
+    
+    <div id="commentBox">
+        <textarea id="comments" placeholder="Write your comment here..." rows="5"></textarea>
+        <div class="commentInputBorder"></div>
+        <div class="commentBorder">
+            <div id="commentIcons">
+                <i class="fa-regular fa-image"></i>
+                <i class="fa-solid fa-rainbow"></i>
+            </div>
+            <div id="commentBtn">
+                <button id="commentButton"><p>Comment</p></button>
+            </div>
+        </div>
+    </div>   
+    
+</div>
+   
     
 </body>
 </html>
