@@ -35,7 +35,7 @@ body {
   }
   
   li:hover i {
-    color: #ffffff;
+    color: #50F9AB;
   }
   
 
@@ -92,7 +92,7 @@ body {
 
 #postOuterBorder {
     border-radius: 10px;
-    padding-top: 40px;
+    padding-top: 30px;
     background-color: #2E2C43;
     width: 1100px;
     height: 700px;
@@ -105,7 +105,7 @@ body {
 
 #postBox {
     width: 1000px;
-    height: 323px;
+    height: 350px;
     margin-top: 10px;
     border-radius: 10px;
     border: solid 1px #68669D;
@@ -117,12 +117,16 @@ body {
     z-index: 1;
 }
 
+#userPost p {
+  line-height: 1.5; 
+}
+
 #userIcon {
     font-size: 30px;
     padding-right: 10px;
     color: #AAA6E5;
     flex-shrink: 0; 
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 #userInfo {
@@ -142,13 +146,14 @@ body {
 }
 
 #postedBy {
-    color: grey;
-    font-size: 65%; 
+  color: #aaa6e5; 
+    font-size: 65%;
+    margin-bottom: 5px;
 }
 
 #userPost p {
     font-size: 110%;
-    padding: 0 30px;
+    padding: 0px 20px;
 }
 
 
@@ -162,6 +167,9 @@ body {
     left: 0px;  
     right: 0px; 
     z-index: 2; 
+    display: flex;          
+    align-items: center;    
+    justify-content: left;
 }
 
 
@@ -189,7 +197,7 @@ body {
 #commentBox {
     width: 1000px; 
     gap: 10px;
-    margin-top: 40px;
+    margin-top: 65px;
     border-radius: 10px;
     border: solid 1px #68669D;
     background-color: #393851;
@@ -243,7 +251,7 @@ color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10%;
+    border-radius: 10px;
     height: 30px;
     width: 110px;
     background-color: #393851;
