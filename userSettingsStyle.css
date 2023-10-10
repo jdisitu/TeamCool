@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    background-color: #212034;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.topbar {
+    background-color: #131227;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    height: 60px; 
+    position: fixed;
+    justify-content: space-between;
+    z-index: 4;
+  }
+  
+  #navigation {
+    float: right;
+    width: 232px;
+    text-align: right;
+  }
+  
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-right: 20px;
+  }
+  
+  nav li {
+    display: inline;
+    margin-left: 30px;
+  }
+  
+  li:hover i {
+    color: #50F9AB;
+  }
+  
+
+  nav a {
+    text-decoration: none;
+    color: #aaa6e5;
+    font-weight: bold;
+  }
+  
+  #logo {
+    float: left;
+    padding-right: 60px;
+    padding-left: 12px;
+  }
+  
+  #logoimg {
+    width: 160px;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #searchBar {
+    display: flex; 
+    justify-content: center; 
+}
+  
+  input[type='search'] {
+    width: 640px; 
+    height: 40px; 
+    padding: 10px; 
+    border: 1px solid #68669d; 
+    border-radius: 5px; 
+    font-size: 14px; 
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #393751; 
+    color: #FAFAFC;
+  }
+  
+  input[type='search']:focus {
+    outline: none; 
+    border-color: #68669d; 
+    box-shadow: 0 0 5px #ffffff; 
+  }
+
+
+  .user-settings {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute; 
+    top: 80px; 
+    left: 200px;
+}
+
+
+.user-info {
+    display: flex;
+    align-items: flex-start; /* align items to start */
+    margin-bottom: 20px;
+    color: #AAA6E5;
+    margin-top: 70px;
+}
+
+.user-info i {
+    font-size: 70px;
+    margin-right: 15px;
+    margin-left: 210px;
+    margin-bottom: -30px;
+}
+
+.label, 
+.alias {
+    margin: 0;
+    display: block; 
+}
+
+.label {
+    color: grey;
+    margin-bottom: 5px; 
+}
+
+.alias {
+    font-weight: bold;
+    font-size:xx-large;
+}
+
+.account-information, .two-factor-authentication, .delete-account {
+    margin-top: 10px;
+    border-radius: 10px;
+    border: solid 1px #68669D;
+    background-color: #393851;
+    color: #FAFAFC;
+    display: flex;            
+    flex-direction: column;  
+    position: relative;
+    margin-left: 300px;
+    padding: 20px;
+    padding-left: 40px;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 20px; 
+}
+
+.account-information h2, 
+.two-factor-authentication h2, .delete-account h2 {
+    margin-top: 0;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.show {
+    color: #aaa6e5; 
+    margin-left: 10px;
+}
+
+.edit{
+    background-color: #212034;
+    color: #FAFAFC;
+    border: solid 1px #68669D; 
+    height: 30px;
+    border-radius: 10%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 20px; 
+    position: absolute;
+    right: 20px;
+    font-size:medium
+}
+
+.edit:hover{
+    color: #aaa6e5; 
+}
+
+
+.lock-symbol {
+    font-size: 20px; 
+    color: #aaa6e5; 
+    margin-right: 10px; 
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+
+.two-factor-status {
+    color: #aaa6e5; 
+    font-size: 14px; 
+    margin: 0; 
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+
+.two-factor-buttons button {
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    height: 30px;
+    background-color: #212034;
+    color: #FAFAFC;
+    border: solid 1px #68669D; 
+    font-size: medium;
+    text-align: center; 
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.remove-2fa{
+    margin-left: 20px;
+}
+
+
+.two-factor-buttons button:hover {
+    color: #aaa6e5; 
+}
+
+
+.sidebar-nav {
+    position: absolute;
+    margin-top: 90px;
+    height: 82%;
+    padding: 50px;
+    padding-left: 180px; 
+    width: 170px;
+    border-right: solid 1px #68669D;
+    background-color: #212034;
+    text-decoration: none; 
+    color: #FAFAFC;
+   
+}
+
+#userSetting, #appSetting{
+    padding-bottom: 40px;
+}
+
+
+.sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav li {
+    margin: 0; 
+}
+
+.sidebar-nav a {
+    color: #FAFAFC;
+    display: block; 
+    padding: 7px 0; 
+    font-weight: lighter;
+}
+
+.sidebar-nav a:hover {
+    color: #aaa6e5; 
+    text-decoration: none;
+}
