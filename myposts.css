@@ -7,7 +7,6 @@
 body {
     background-color: #212034;
     font-family: Helvetica, sans-serif;
-    
 }
 
 *,
@@ -51,9 +50,9 @@ body {
     display: inline;
     margin-left: 30px;
   }
-  
+
   li:hover i {
-    color: #ffffff;
+    color: #50f9ab;
   }
   
   nav a {
@@ -110,12 +109,12 @@ body {
 /* Side menu */
 
 #side-menu {
-    width: 150px;
+    width: 170px;
     height: 900px;
     margin-top: 90px;
-    margin-right: 25px;
+    margin-right: 55px;
     padding-right: 25px;
-    border-right: 1px solid #FAFAFC;
+    border-right: 1px solid #68669D;
 
     flex-direction: row;
     align-items: center;
@@ -123,14 +122,16 @@ body {
 
 #side-menu h4 {
     margin-top: 15px;
+    margin-bottom: 22px;
     margin-left: 5px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
 }
 
 #side-menu li {
-    margin: 7px 5px 5px 5px;
-    font-size: 12px;
+    margin: 12px 5px 8px 5px;
+    font-size: 14px;
+    font-weight: 200;
 }
 
 #active-page {
@@ -160,7 +161,7 @@ body {
 #stats {
     background-color: #212034;
     width: 600px;
-    border-bottom: 1px solid #FAFAFC;
+    border-bottom: 1px solid #68669D;
     padding-bottom: 16px;
 
     display: flex; 
@@ -214,16 +215,14 @@ body {
     margin-right: 30px;
 }
 
-/* Style the options within the select */
 #filter select option {
     background-color: #393851;
     color: #FAFAFC;
 }
 
-/* Hover effect */
 #filter select:hover {
     background-color: #50F9AB;
-    color: #393851; /* Text color on hover */
+    color: #393851;
 }
 
 /* Posts */
@@ -253,10 +252,10 @@ body {
 }
 
 .avatar-area img {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border-radius: 100px;
-    margin: 10px;
+    margin: 13px 10px 10px 10px;
 }
 
 .text-ava {
@@ -275,7 +274,7 @@ body {
     flex: 1;
     font-size: 10px;
     font-weight: lighter;
-    color: #68669D;
+    color: #aaa6e5;
     margin-bottom: 8px;
 }
 
@@ -289,9 +288,18 @@ body {
 .post-activity-buttons {
     display: flex;
     flex-direction: row;
-    margin: 24px 0px 10px 10px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 10px;
+    margin-top: 14px;
+    background-color: #2E2C43;
+    border-radius: 0 0 10px 10px;
 }
 
 .activity-button-text {
     padding-right: 24px;
 }
+
+.iconLink {
+    color: #aaa6e5;
+  }
