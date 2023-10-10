@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="userSettingsStyle.css">
+    <script src="https://kit.fontawesome.com/d3a5fb13c9.js" crossorigin="anonymous"></script>
+    <title>User Settings</title>    
+</head>
+<body>
+    <header class="topbar">
+        <div id="logo"><img src="/images/logotwo.png" id="logoimg" /></div>
+        <div id="searchBar">
+            <form action="/search" method="get">
+                <input type="search" id="search" name="q" placeholder="Search..." />
+            </form>
+        </div>
+        <div id="navigation">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-box-archive"></i></a> <!-- This line has been updated -->
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-bell"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-user"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <div class="user-settings">
+        <div class="user-info">
+            <i class="fas fa-user-circle"></i>
+            <div>
+                <p class="label">Current Alias</p>
+                <p class="alias">DangerousHibiscus</p>
+            </div>
+        </div>
+        <div class="account-information">
+            <h2>Account Information</h2>
+            <div class="info-item">
+                <p><strong>User ID</strong></p>
+                <p>
+                    <span>******71</span>
+                    <span class="show">Show</span>
+                    <button class="edit">Edit</button>
+                </p>
+            </div>
+            <div class="info-item">
+                <p><strong>E-mail</strong></p>
+                <p>
+                    <span>********@gmail.com</span>
+                    <span class="show">Show</span>
+                    <button class="edit">Edit</button>
+                </p>
+            </div>
+            <div class="info-item">
+                <!-- Additional info items can go here -->
+            </div>
+        </div>
+
+        <div class="two-factor-authentication">
+            <h2>Two-Factor Authentication</h2>
+            <div class="sub-category">
+                <div class="lock-symbol">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <p class="two-factor-status">Two-factor authentication is enabled</p>
+                <p><strong>Two-factor authentication</strong> is a security process that requires users to provide two different authentication factors to access an account or system.</p>
+            </div>
+            <div class="two-factor-buttons">
+                <button class="see-backup-codes">See backup codes</button>
+                <button class="remove-2fa">Remove 2FA</button>
+            </div>
+        </div>
+
+
+        <div class="delete-account">
+            <h2>Delete account</h2>
+            <div class="sub-category">
+                <p>If you delete your account you can never retrieve any information from it again.</p>
+            </div>
+            <div class="two-factor-buttons">
+                <button class="see-backup-codes">Delete account</button>
+            </div>
+        </div>
+
+    </div>
+
+
+          <nav class="sidebar-nav">
+              <ul>
+                  <li>
+                    <div id="userSetting">
+                      <h3>USER SETTINGS</h3>
+                      <ul>
+                          <li><a href="#">My Account</a></li>
+                          <li><a href="#">Privacy & Safety</a></li>
+                          <li><a href="#">My Aliases</a></li>
+                          <li><a href="#">My Posts</a></li>
+                          <li><a href="#">Change Password</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div id="appSetting">
+                      <h3>APP SETTINGS</h3>
+                      <ul>
+                          <li><a href="#">Appearance</a></li>
+                          <li><a href="#">Country and Language</a></li>
+                          <li><a href="#">Notifications</a></li>
+                      </ul>
+                    </div>
+                  </li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+  
+  
+</body>
+</html>
